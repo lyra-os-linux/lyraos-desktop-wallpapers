@@ -9,9 +9,11 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - run: ./scripts/build-wallpaper-variants.sh
       - run: |
+          test -f dist/backgrounds/2702-dawn.png
+          test -f dist/backgrounds/2702-dawn.jxl
           test -f dist/backgrounds/2702-voyage.png
           test -f dist/backgrounds/2702-voyage.jxl
-          test "$(find dist/backgrounds -maxdepth 1 -name '2702-*.png' | wc -l)" -eq 11
-          test "$(find dist/backgrounds -maxdepth 1 -name '2702-*.jxl' | wc -l)" -eq 11
+          test "$(find dist/backgrounds -maxdepth 1 -name '2702-*.png' | wc -l)" -eq 2
+          test "$(find dist/backgrounds -maxdepth 1 -name '2702-*.jxl' | wc -l)" -eq 2
           grep -Fqx '    <filename>/usr/share/backgrounds/lyra/2702-voyage.png</filename>' \
             dist/gnome-background-properties/lyra-os.xml

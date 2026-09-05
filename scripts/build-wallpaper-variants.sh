@@ -13,9 +13,10 @@ export MAGICK_TEMPORARY_PATH="$tmp"
 command -v magick >/dev/null 2>&1 || { echo 'error: ImageMagick is required' >&2; exit 1; }
 mkdir -p "$dist/backgrounds" "$dist/gnome-background-properties"
 
-shopt -s nullglob
-sources=("$root"/wallpapers/*.png)
-(( ${#sources[@]} > 0 )) || { echo 'error: no wallpaper sources found' >&2; exit 1; }
+sources=("$root/wallpapers/2702-dawn.png" "$root/wallpapers/2702-voyage.png")
+for source in "${sources[@]}"; do
+  [[ -f $source ]] || { echo "error: required wallpaper missing: $source" >&2; exit 1; }
+done
 rm -f "$dist"/backgrounds/*.{png,jxl,svg}
 install -m 0644 "$root/src/wallpaper/lyra-os.xml" \
   "$dist/gnome-background-properties/lyra-os.xml"

@@ -3,9 +3,9 @@
 Coleção oficial de wallpapers do Lyra OS, distribuída pelo pacote
 `lyra-os-wallpapers`.
 
-Os arquivos são agrupados por versão do sistema. A série atual usa o prefixo
-`2702-`; novas séries devem manter as anteriores instaláveis e adotar seu
-próprio prefixo de versão.
+O pacote contém apenas **Dawn** e **Voyage**, em PNG e JPEG XL, com metadados
+para as Configurações do GNOME. O build usa uma lista explícita dos dois arquivos;
+as demais imagens do repositório não são incluídas nos RPMs.
 
 ## Build
 

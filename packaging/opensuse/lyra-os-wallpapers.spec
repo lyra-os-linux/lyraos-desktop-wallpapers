@@ -9,8 +9,8 @@ BuildArch:      noarch
 BuildRequires:  ImageMagick
 
 %description
-Official, versioned Lyra OS wallpaper collection. The 2702 series is shipped
-as 4K PNG and JPEG XL images and includes GNOME background metadata.
+Dawn and Voyage wallpapers for Lyra OS, shipped as 4K PNG and JPEG XL
+images with GNOME background metadata.
 
 %prep
 %setup -q -n lyra-wallpapers-src-%{version}
@@ -20,7 +20,8 @@ as 4K PNG and JPEG XL images and includes GNOME background metadata.
 
 %install
 install -d %{buildroot}%{_datadir}/backgrounds/lyra
-install -m 0644 dist/backgrounds/*.png dist/backgrounds/*.jxl \
+install -m 0644 dist/backgrounds/2702-dawn.png dist/backgrounds/2702-dawn.jxl \
+  dist/backgrounds/2702-voyage.png dist/backgrounds/2702-voyage.jxl \
   %{buildroot}%{_datadir}/backgrounds/lyra/
 install -d %{buildroot}%{_datadir}/gnome-background-properties
 install -m 0644 dist/gnome-background-properties/lyra-os.xml \
@@ -31,8 +32,10 @@ install -m 0644 dist/gnome-background-properties/lyra-os.xml \
 %doc README.md
 %dir %{_datadir}/backgrounds
 %dir %{_datadir}/backgrounds/lyra
-%{_datadir}/backgrounds/lyra/2702-*.png
-%{_datadir}/backgrounds/lyra/2702-*.jxl
+%{_datadir}/backgrounds/lyra/2702-dawn.png
+%{_datadir}/backgrounds/lyra/2702-dawn.jxl
+%{_datadir}/backgrounds/lyra/2702-voyage.png
+%{_datadir}/backgrounds/lyra/2702-voyage.jxl
 %dir %{_datadir}/gnome-background-properties
 %{_datadir}/gnome-background-properties/lyra-os.xml
 
