@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     container: opensuse/tumbleweed:latest
     steps:
-      - run: zypper --non-interactive install ImageMagick
+      # findutils: a imagem do Tumbleweed deixou de trazer o find.
+      - run: zypper --non-interactive install ImageMagick findutils
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - run: ./scripts/build-wallpaper-variants.sh
       - run: |
