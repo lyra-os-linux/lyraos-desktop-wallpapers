@@ -3,11 +3,22 @@
 Coleção oficial de wallpapers do Lyra OS, distribuída pelo pacote
 `lyra-os-wallpapers`.
 
-O pacote contém apenas **Dawn** e **Voyage**, em PNG e JPEG XL, com metadados
-para as Configurações do GNOME. O build usa uma lista explícita dos dois arquivos;
-as demais imagens do repositório não são incluídas nos RPMs.
+O pacote contém 22 wallpapers, em PNG e JPEG XL, com metadados para as
+Configurações do GNOME:
+
+- **cenas pintadas:** Dawn, Voyage, Aurora, Twilight, Anchorage, Sunrise,
+  Serene, Haze, Cloudsea e Lagoon;
+- **abstratos:** Bloom, Lotus, Silk, Strata, Ascent, Mosaic, Dusk, Nocturne,
+  Dunes, Orbit, Eclipse e Halo.
+
+O build usa uma lista explícita desses arquivos; as demais imagens do
+repositório não são incluídas nos RPMs.
 
 ## Build
+
+As imagens são empacotadas na resolução original, sem ampliação para 4K: o
+GNOME já ajusta o wallpaper à tela (`zoom`), e ampliar no build só triplicaria
+o tamanho do pacote sem acrescentar detalhe.
 
 ```bash
 ./scripts/build-wallpaper-variants.sh
