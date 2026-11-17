@@ -9,8 +9,9 @@ BuildArch:      noarch
 BuildRequires:  ImageMagick
 
 %description
-Dawn, Voyage, Aurora, Twilight, Anchorage and Sunrise wallpapers for
-Lyra OS, shipped as 4K PNG and JPEG XL images with GNOME background metadata.
+Dawn, Voyage, Aurora, Twilight, Anchorage, Sunrise, Serene, Haze, Cloudsea
+and Lagoon wallpapers for Lyra OS, shipped as 4K PNG and JPEG XL images
+with GNOME background metadata.
 
 %prep
 %autosetup
@@ -20,7 +21,8 @@ Lyra OS, shipped as 4K PNG and JPEG XL images with GNOME background metadata.
 
 %install
 install -d %{buildroot}%{_datadir}/backgrounds/lyra
-for wallpaper in dawn voyage aurora twilight anchorage sunrise; do
+for wallpaper in dawn voyage aurora twilight anchorage sunrise \
+    serene haze cloudsea lagoon; do
   install -m 0644 dist/backgrounds/2702-$wallpaper.png \
     dist/backgrounds/2702-$wallpaper.jxl %{buildroot}%{_datadir}/backgrounds/lyra/
 done
@@ -45,6 +47,14 @@ install -m 0644 dist/gnome-background-properties/lyra-os.xml \
 %{_datadir}/backgrounds/lyra/2702-anchorage.jxl
 %{_datadir}/backgrounds/lyra/2702-sunrise.png
 %{_datadir}/backgrounds/lyra/2702-sunrise.jxl
+%{_datadir}/backgrounds/lyra/2702-serene.png
+%{_datadir}/backgrounds/lyra/2702-serene.jxl
+%{_datadir}/backgrounds/lyra/2702-haze.png
+%{_datadir}/backgrounds/lyra/2702-haze.jxl
+%{_datadir}/backgrounds/lyra/2702-cloudsea.png
+%{_datadir}/backgrounds/lyra/2702-cloudsea.jxl
+%{_datadir}/backgrounds/lyra/2702-lagoon.png
+%{_datadir}/backgrounds/lyra/2702-lagoon.jxl
 %dir %{_datadir}/gnome-background-properties
 %{_datadir}/gnome-background-properties/lyra-os.xml
 

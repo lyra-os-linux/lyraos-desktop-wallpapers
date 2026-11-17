@@ -40,4 +40,28 @@
     <filename-dark>/usr/share/backgrounds/lyra/2702-sunrise.png</filename-dark>
     <options>zoom</options>
   </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Serene</name>
+    <filename>/usr/share/backgrounds/lyra/2702-serene.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-serene.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Haze</name>
+    <filename>/usr/share/backgrounds/lyra/2702-haze.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-haze.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Cloudsea</name>
+    <filename>/usr/share/backgrounds/lyra/2702-cloudsea.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-cloudsea.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Lagoon</name>
+    <filename>/usr/share/backgrounds/lyra/2702-lagoon.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-lagoon.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
 </wallpapers>

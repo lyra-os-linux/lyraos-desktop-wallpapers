@@ -20,6 +20,10 @@ sources=(
   "$root/wallpapers/2702-twilight.png"
   "$root/wallpapers/2702-anchorage.png"
   "$root/wallpapers/2702-sunrise.png"
+  "$root/wallpapers/2702-serene.png"
+  "$root/wallpapers/2702-haze.png"
+  "$root/wallpapers/2702-cloudsea.png"
+  "$root/wallpapers/2702-lagoon.png"
 )
 for source in "${sources[@]}"; do
   [[ -f $source ]] || { echo "error: required wallpaper missing: $source" >&2; exit 1; }

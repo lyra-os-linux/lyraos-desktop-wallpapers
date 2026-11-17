@@ -10,11 +10,12 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - run: ./scripts/build-wallpaper-variants.sh
       - run: |
-          for wallpaper in dawn voyage aurora twilight anchorage sunrise; do
+          for wallpaper in dawn voyage aurora twilight anchorage sunrise \
+            serene haze cloudsea lagoon; do
             test -f dist/backgrounds/2702-$wallpaper.png
             test -f dist/backgrounds/2702-$wallpaper.jxl
             grep -Fqx "    <filename>/usr/share/backgrounds/lyra/2702-$wallpaper.png</filename>" \
               dist/gnome-background-properties/lyra-os.xml
           done
-          test "$(find dist/backgrounds -maxdepth 1 -name '2702-*.png' | wc -l)" -eq 6
-          test "$(find dist/backgrounds -maxdepth 1 -name '2702-*.jxl' | wc -l)" -eq 6
+          test "$(find dist/backgrounds -maxdepth 1 -name '2702-*.png' | wc -l)" -eq 10
+          test "$(find dist/backgrounds -maxdepth 1 -name '2702-*.jxl' | wc -l)" -eq 10
