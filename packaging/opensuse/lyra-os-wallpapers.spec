@@ -9,8 +9,8 @@ BuildArch:      noarch
 BuildRequires:  ImageMagick
 
 %description
-Dawn and Voyage wallpapers for Lyra OS, shipped as 4K PNG and JPEG XL
-images with GNOME background metadata.
+Dawn, Voyage, Aurora, Twilight, Anchorage and Sunrise wallpapers for
+Lyra OS, shipped as 4K PNG and JPEG XL images with GNOME background metadata.
 
 %prep
 %setup -q -n lyra-wallpapers-src-%{version}
@@ -20,9 +20,10 @@ images with GNOME background metadata.
 
 %install
 install -d %{buildroot}%{_datadir}/backgrounds/lyra
-install -m 0644 dist/backgrounds/2702-dawn.png dist/backgrounds/2702-dawn.jxl \
-  dist/backgrounds/2702-voyage.png dist/backgrounds/2702-voyage.jxl \
-  %{buildroot}%{_datadir}/backgrounds/lyra/
+for wallpaper in dawn voyage aurora twilight anchorage sunrise; do
+  install -m 0644 dist/backgrounds/2702-$wallpaper.png \
+    dist/backgrounds/2702-$wallpaper.jxl %{buildroot}%{_datadir}/backgrounds/lyra/
+done
 install -d %{buildroot}%{_datadir}/gnome-background-properties
 install -m 0644 dist/gnome-background-properties/lyra-os.xml \
   %{buildroot}%{_datadir}/gnome-background-properties/
@@ -36,6 +37,14 @@ install -m 0644 dist/gnome-background-properties/lyra-os.xml \
 %{_datadir}/backgrounds/lyra/2702-dawn.jxl
 %{_datadir}/backgrounds/lyra/2702-voyage.png
 %{_datadir}/backgrounds/lyra/2702-voyage.jxl
+%{_datadir}/backgrounds/lyra/2702-aurora.png
+%{_datadir}/backgrounds/lyra/2702-aurora.jxl
+%{_datadir}/backgrounds/lyra/2702-twilight.png
+%{_datadir}/backgrounds/lyra/2702-twilight.jxl
+%{_datadir}/backgrounds/lyra/2702-anchorage.png
+%{_datadir}/backgrounds/lyra/2702-anchorage.jxl
+%{_datadir}/backgrounds/lyra/2702-sunrise.png
+%{_datadir}/backgrounds/lyra/2702-sunrise.jxl
 %dir %{_datadir}/gnome-background-properties
 %{_datadir}/gnome-background-properties/lyra-os.xml
 

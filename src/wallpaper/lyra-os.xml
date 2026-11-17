@@ -16,4 +16,28 @@
     <filename-dark>/usr/share/backgrounds/lyra/2702-dawn.png</filename-dark>
     <options>zoom</options>
   </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Aurora</name>
+    <filename>/usr/share/backgrounds/lyra/2702-aurora.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-aurora.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Twilight</name>
+    <filename>/usr/share/backgrounds/lyra/2702-twilight.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-twilight.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Anchorage</name>
+    <filename>/usr/share/backgrounds/lyra/2702-anchorage.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-anchorage.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Sunrise</name>
+    <filename>/usr/share/backgrounds/lyra/2702-sunrise.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-sunrise.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
 </wallpapers>

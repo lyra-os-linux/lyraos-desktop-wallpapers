@@ -13,7 +13,14 @@ export MAGICK_TEMPORARY_PATH="$tmp"
 command -v magick >/dev/null 2>&1 || { echo 'error: ImageMagick is required' >&2; exit 1; }
 mkdir -p "$dist/backgrounds" "$dist/gnome-background-properties"
 
-sources=("$root/wallpapers/2702-dawn.png" "$root/wallpapers/2702-voyage.png")
+sources=(
+  "$root/wallpapers/2702-dawn.png"
+  "$root/wallpapers/2702-voyage.png"
+  "$root/wallpapers/2702-aurora.png"
+  "$root/wallpapers/2702-twilight.png"
+  "$root/wallpapers/2702-anchorage.png"
+  "$root/wallpapers/2702-sunrise.png"
+)
 for source in "${sources[@]}"; do
   [[ -f $source ]] || { echo "error: required wallpaper missing: $source" >&2; exit 1; }
 done
