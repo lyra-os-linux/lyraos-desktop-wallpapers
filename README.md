@@ -16,6 +16,10 @@ repositório não são incluídas nos RPMs.
 
 ## Build
 
+As imagens são empacotadas na resolução original, sem ampliação para 4K: o
+GNOME já ajusta o wallpaper à tela (`zoom`), e ampliar no build só triplicaria
+o tamanho do pacote sem acrescentar detalhe.
+
 ```bash
 ./scripts/build-wallpaper-variants.sh
 rpmbuild -bb packaging/lyra-os-wallpapers.spec

@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Builds the Lyra OS photographic wallpaper collection. Source images use
-# version-prefixed package names; release artifacts are normalized to 4K PNG
-# and JPEG XL for GNOME and downstream packaging.
+# Builds the Lyra OS wallpaper collection. Source images use version-prefixed
+# package names and keep their native resolution: upscaling to 4K only
+# interpolates pixels and triples the package size, while GNOME already
+# scales the picture to the screen (zoom). Artifacts are PNG and JPEG XL.
 root=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
 dist="$root/dist"
 tmp=$(mktemp -d "$root/.build-tmp.XXXXXX")
@@ -46,8 +47,7 @@ install -m 0644 "$root/src/wallpaper/lyra-os.xml" \
 
 for source in "${sources[@]}"; do
   stem=$(basename "$source" .png)
-  magick "$source" -filter Lanczos -resize '3840x2160!' -strip \
-    "$dist/backgrounds/$stem.png"
+  magick "$source" -strip "$dist/backgrounds/$stem.png"
   magick "$dist/backgrounds/$stem.png" -quality 92 \
     "$dist/backgrounds/$stem.jxl"
   printf 'Rendered %s\n' "$stem"

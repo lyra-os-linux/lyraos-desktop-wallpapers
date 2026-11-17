@@ -10,7 +10,7 @@ BuildRequires:  ImageMagick
 
 %description
 Twenty-two wallpapers for Lyra OS: scenic paintings (Dawn, Voyage and
-companions) and abstract compositions, shipped as 4K PNG and JPEG XL
+companions) and abstract compositions, shipped as PNG and JPEG XL
 images with GNOME background metadata.
 
 %prep
