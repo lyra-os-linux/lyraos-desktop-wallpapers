@@ -64,4 +64,76 @@
     <filename-dark>/usr/share/backgrounds/lyra/2702-lagoon.png</filename-dark>
     <options>zoom</options>
   </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Bloom</name>
+    <filename>/usr/share/backgrounds/lyra/2702-bloom.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-bloom.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Lotus</name>
+    <filename>/usr/share/backgrounds/lyra/2702-lotus.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-lotus.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Silk</name>
+    <filename>/usr/share/backgrounds/lyra/2702-silk.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-silk.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Strata</name>
+    <filename>/usr/share/backgrounds/lyra/2702-strata.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-strata.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Ascent</name>
+    <filename>/usr/share/backgrounds/lyra/2702-ascent.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-ascent.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Mosaic</name>
+    <filename>/usr/share/backgrounds/lyra/2702-mosaic.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-mosaic.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Dusk</name>
+    <filename>/usr/share/backgrounds/lyra/2702-dusk.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-dusk.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Nocturne</name>
+    <filename>/usr/share/backgrounds/lyra/2702-nocturne.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-nocturne.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Dunes</name>
+    <filename>/usr/share/backgrounds/lyra/2702-dunes.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-dunes.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Orbit</name>
+    <filename>/usr/share/backgrounds/lyra/2702-orbit.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-orbit.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Eclipse</name>
+    <filename>/usr/share/backgrounds/lyra/2702-eclipse.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-eclipse.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Halo</name>
+    <filename>/usr/share/backgrounds/lyra/2702-halo.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-halo.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
 </wallpapers>
