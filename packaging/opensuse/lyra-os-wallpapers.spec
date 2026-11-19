@@ -9,9 +9,9 @@ BuildArch:      noarch
 BuildRequires:  ImageMagick
 
 %description
-Twenty-two wallpapers for Lyra OS: scenic paintings (Dawn, Voyage and
-companions) and abstract compositions, shipped as PNG and JPEG XL
-images with GNOME background metadata.
+Twenty-eight wallpapers for Lyra OS: scenic paintings (Dawn, Voyage and
+companions), abstract compositions and night skies with the Lyra OS
+mascot, shipped as PNG and JPEG XL images with GNOME background metadata.
 
 %prep
 %setup -q -n lyra-wallpapers-src-%{version}
@@ -23,7 +23,7 @@ images with GNOME background metadata.
 install -d %{buildroot}%{_datadir}/backgrounds/lyra
 for wallpaper in dawn voyage aurora twilight anchorage sunrise serene haze cloudsea \
     lagoon bloom lotus silk strata ascent mosaic dusk nocturne dunes \
-    orbit eclipse halo; do
+    orbit eclipse halo constellation borealis nebula beacon daybreak peek; do
   install -m 0644 dist/backgrounds/2702-$wallpaper.png \
     dist/backgrounds/2702-$wallpaper.jxl %{buildroot}%{_datadir}/backgrounds/lyra/
 done
@@ -80,6 +80,18 @@ install -m 0644 dist/gnome-background-properties/lyra-os.xml \
 %{_datadir}/backgrounds/lyra/2702-eclipse.jxl
 %{_datadir}/backgrounds/lyra/2702-halo.png
 %{_datadir}/backgrounds/lyra/2702-halo.jxl
+%{_datadir}/backgrounds/lyra/2702-constellation.png
+%{_datadir}/backgrounds/lyra/2702-constellation.jxl
+%{_datadir}/backgrounds/lyra/2702-borealis.png
+%{_datadir}/backgrounds/lyra/2702-borealis.jxl
+%{_datadir}/backgrounds/lyra/2702-nebula.png
+%{_datadir}/backgrounds/lyra/2702-nebula.jxl
+%{_datadir}/backgrounds/lyra/2702-beacon.png
+%{_datadir}/backgrounds/lyra/2702-beacon.jxl
+%{_datadir}/backgrounds/lyra/2702-daybreak.png
+%{_datadir}/backgrounds/lyra/2702-daybreak.jxl
+%{_datadir}/backgrounds/lyra/2702-peek.png
+%{_datadir}/backgrounds/lyra/2702-peek.jxl
 %dir %{_datadir}/gnome-background-properties
 %{_datadir}/gnome-background-properties/lyra-os.xml
 

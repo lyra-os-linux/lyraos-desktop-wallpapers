@@ -11,11 +11,12 @@ jobs:
       - run: ./scripts/build-wallpaper-variants.sh
       - run: |
           for wallpaper in dawn voyage aurora twilight anchorage sunrise serene haze cloudsea lagoon \
-            bloom lotus silk strata ascent mosaic dusk nocturne dunes orbit eclipse halo; do
+            bloom lotus silk strata ascent mosaic dusk nocturne dunes orbit eclipse halo \
+            constellation borealis nebula beacon daybreak peek; do
             test -f dist/backgrounds/2702-$wallpaper.png
             test -f dist/backgrounds/2702-$wallpaper.jxl
             grep -Fqx "    <filename>/usr/share/backgrounds/lyra/2702-$wallpaper.png</filename>" \
               dist/gnome-background-properties/lyra-os.xml
           done
-          test "$(find dist/backgrounds -maxdepth 1 -name '2702-*.png' | wc -l)" -eq 22
-          test "$(find dist/backgrounds -maxdepth 1 -name '2702-*.jxl' | wc -l)" -eq 22
+          test "$(find dist/backgrounds -maxdepth 1 -name '2702-*.png' | wc -l)" -eq 28
+          test "$(find dist/backgrounds -maxdepth 1 -name '2702-*.jxl' | wc -l)" -eq 28
