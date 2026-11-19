@@ -136,4 +136,40 @@
     <filename-dark>/usr/share/backgrounds/lyra/2702-halo.png</filename-dark>
     <options>zoom</options>
   </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Constellation</name>
+    <filename>/usr/share/backgrounds/lyra/2702-constellation.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-constellation.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Borealis</name>
+    <filename>/usr/share/backgrounds/lyra/2702-borealis.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-borealis.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Nebula</name>
+    <filename>/usr/share/backgrounds/lyra/2702-nebula.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-nebula.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Beacon</name>
+    <filename>/usr/share/backgrounds/lyra/2702-beacon.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-beacon.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Daybreak</name>
+    <filename>/usr/share/backgrounds/lyra/2702-daybreak.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-daybreak.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lyra OS — Peek</name>
+    <filename>/usr/share/backgrounds/lyra/2702-peek.png</filename>
+    <filename-dark>/usr/share/backgrounds/lyra/2702-peek.png</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
 </wallpapers>
